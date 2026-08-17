@@ -1,4 +1,4 @@
-ddCSLuaFile()
+AddCSLuaFile()
 
 ENT.Base = "base_anim"
 ENT.Spawnable = true
