@@ -135,11 +135,11 @@ function ENT:LainAttemptPrompt()
         end
         --print(self:GetLastChatLog(0))
         --print(self:GetLastChatLog(1))
-    else
+   else
+    if (AUBUTIL_LLMCOOLDOWN ~= nil) then
         print("wired cooldown of: "..(AUBUTIL_LLMCOOLDOWN - CurTime()).." seconds remaining")
     end
 end
-
 local entTemp = nil
 function LainPromptOut(outPrompt,me)
     if(SERVER) then
