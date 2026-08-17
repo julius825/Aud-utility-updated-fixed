@@ -94,7 +94,7 @@ local buildAddTex = ""
 local entsAll = {}
 local lainEntScrapeMax = 8
 function ENT:LainAttemptPrompt()
-    if (AUBUTIL_LLMCOOLDOWN <= CurTime()) then
+  if (AUBUTIL_LLMCOOLDOWN ~= nil and AUBUTIL_LLMCOOLDOWN <= CurTime()) then
         if (math.random(1,2) == 1) then
             entsAll = ents.GetAll()
             buildAddTex = ""
